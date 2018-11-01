@@ -14,7 +14,7 @@ Square requires iOS 8 or above and is written in Swift 4.2
 Suqare is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your podfile: 
 
 ```ruby
-pod 'Square', '~> 0.1.0'
+pod 'Square', '~> 0.2.0'
 ```
 
 And run  `pod install`. 
@@ -30,14 +30,14 @@ $ brew install carthage
 add Suqare to your `Cartfile`: 
 
 ```ogdl
-github "devmjun/Square" ~> 0.1.0
+github "devmjun/Square" ~> 0.2.0
 ```
 
 And run `carthage update`.
 
 ## Usage 
 
-### One button alert 
+### One Button Alert 
 
 <center><img src="/img/README/oneButton.png" width="550" height="300"></center> <br>
 
@@ -74,7 +74,7 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
 
 ### Action Sheet
 
-#### One button alert 
+#### One Button Alert 
 
 <center><img src="/img/README/ActionSheet.png" width="400" height="300"></center> <br>
 
@@ -101,6 +101,16 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
     }
 }
 ```
+
+## Customize
+
+```swift
+let alertController = Square.display("Title")
+alertController.setValue(attributedTitle, forKey: "attributedTitle")
+alertController.setValue(attributedMessage, forKey: "attributedMessage")
+alertController.view.tintColor =  SomeColor
+```
+        
 
 ## Contributing 
 
