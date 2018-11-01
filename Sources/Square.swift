@@ -8,7 +8,7 @@
 import UIKit
 
 public enum ActionType {
-    case `default`(messgae: String)
+    case `default`(message: String)
     case cancel(message: String)
     case destructive(message: String)
     
@@ -22,7 +22,7 @@ public enum ActionType {
     
     var message: String {
         switch self {
-        case .default(let messgae):     return messgae
+        case .default(let message):     return message
         case .cancel(let message):      return message
         case .destructive(let message): return message
         }
@@ -62,7 +62,7 @@ extension Square {
      */
     @discardableResult
     open class func display(_ title: String, message: String) -> UIAlertController {
-        return display(title, message: message, alertAction: .default(messgae: "OK"), acceptBlock: {
+        return display(title, message: message, alertAction: .default(message: "OK"), acceptBlock: {
             // Do nothing
         })
     }
