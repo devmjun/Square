@@ -1,8 +1,6 @@
 # Square
 
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
-
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square.svg?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Square's purpose is that to use *UIAlertController* easily.
 
@@ -16,7 +14,7 @@ Square requires iOS 8 or above and is written in Swift 4.2
 Suqare is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your podfile: 
 
 ```ruby
-pod 'Square', '~> 0.1.0'
+pod 'Square', '~> 0.2.0'
 ```
 
 And run  `pod install`. 
@@ -32,16 +30,16 @@ $ brew install carthage
 add Suqare to your `Cartfile`: 
 
 ```ogdl
-github "devmjun/Suqare" ~> 0.1.0
+github "devmjun/Square" ~> 0.2.0
 ```
 
 And run `carthage update`.
 
 ## Usage 
 
-### One button alert 
+### One Button Alert 
 
-![](/img/README/oneButton.png)
+<center><img src="/img/README/oneButton.png" width="550" height="300"></center> <br>
 
 ```swift
 // 1
@@ -58,7 +56,7 @@ Square.display("Title", message: "Title", alertAction: .default(messgae: "OK")) 
 
 ### Multiple Button Alerts
 
-![](/img/README/mutlpleButton.png)
+<center><img src="/img/README/mutlpleButton.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertActions: [.cancel(message: "Cancel"), .destructive(message: "Detructive"), .default(messgae: "Default")]) { (alertAction, index) in
@@ -76,9 +74,9 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
 
 ### Action Sheet
 
-#### One button alert 
+#### One Button Alert 
 
-![](/img/README/ActionSheet.png)
+<center><img src="/img/README/ActionSheet.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertAction: .default(messgae: "OK"), preferredStyle: .actionSheet) {
@@ -88,7 +86,7 @@ Square.display("Title", message: "Message", alertAction: .default(messgae: "OK")
 
 #### Multiple Button Alerts
 
-![](/img/README/ActionSheet-1.png)
+<center><img src="/img/README/ActionSheet-1.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertActions: [.cancel(message: "Cancel"), .destructive(message: "Detructive"), .default(messgae: "Default")], preferredStyle: .actionSheet) { (alertAction, index) in
@@ -103,6 +101,16 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
     }
 }
 ```
+
+## Customize
+
+```swift
+let alertController = Square.display("Title")
+alertController.setValue(attributedTitle, forKey: "attributedTitle")
+alertController.setValue(attributedMessage, forKey: "attributedMessage")
+alertController.view.tintColor =  SomeColor
+```
+        
 
 ## Contributing 
 

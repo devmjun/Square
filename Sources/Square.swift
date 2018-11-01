@@ -143,6 +143,7 @@ extension Square {
         return alertController
     }
     
+    @discardableResult
     open class func displayActionSheet(_ title: String,
                                        message: String,
                                        sourceView: UIView,
