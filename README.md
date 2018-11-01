@@ -41,7 +41,7 @@ And run `carthage update`.
 
 ### One button alert 
 
-![](/img/README/oneButton.png)
+<center><img src="/img/README/oneButton.png" width="400" height="300"></center> <br>
 
 ```swift
 // 1
@@ -58,7 +58,7 @@ Square.display("Title", message: "Title", alertAction: .default(messgae: "OK")) 
 
 ### Multiple Button Alerts
 
-![](/img/README/mutlpleButton.png)
+<center><img src="/img/README/mutlpleButton.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertActions: [.cancel(message: "Cancel"), .destructive(message: "Detructive"), .default(messgae: "Default")]) { (alertAction, index) in
@@ -78,7 +78,7 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
 
 #### One button alert 
 
-![](/img/README/ActionSheet.png)
+<center><img src="/img/README/ActionSheet.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertAction: .default(messgae: "OK"), preferredStyle: .actionSheet) {
@@ -88,7 +88,7 @@ Square.display("Title", message: "Message", alertAction: .default(messgae: "OK")
 
 #### Multiple Button Alerts
 
-![](/img/README/ActionSheet-1.png)
+<center><img src="/img/README/ActionSheet-1.png" width="400" height="300"></center> <br>
 
 ```swift
 Square.display("Title", message: "Message", alertActions: [.cancel(message: "Cancel"), .destructive(message: "Detructive"), .default(messgae: "Default")], preferredStyle: .actionSheet) { (alertAction, index) in
