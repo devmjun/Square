@@ -13,7 +13,7 @@ jobs:
 # Verify a Carthage build 
 env:
   global:
-    - FRAMEWORK_NAME=<CaseContainer>
+    - FRAMEWORK_NAME=<Square>
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
