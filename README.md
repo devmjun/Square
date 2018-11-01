@@ -1,6 +1,6 @@
 # Square
 
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square.svg?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
 
@@ -41,7 +41,7 @@ And run `carthage update`.
 
 ### One button alert 
 
-<center><img src="/img/README/oneButton.png" width="400" height="300"></center> <br>
+<center><img src="/img/README/oneButton.png" width="550" height="300"></center> <br>
 
 ```swift
 // 1
