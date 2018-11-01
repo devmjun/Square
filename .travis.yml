@@ -7,7 +7,7 @@ xcode_sdk: iphonesimulator12.0 #5
 jobs:
   include:
     - script: 
-      - xcodebuild build test -project Square.xcodeproj -scheme SquareTests -destination "platform=iOS Simulator,name=iPhone 8,OS=12.1" -enableCodeCoverage YES 
+      - xcodebuild build test -project Square.xcodeproj -scheme SquareTests -destination "platform=iOS Simulator,name=iPhone 8,OS=12.0" -enableCodeCoverage YES 
       after_script: bash <(curl -s https://codecov.io/bash) -J 'Square'
 
 # Verify a Carthage build 
