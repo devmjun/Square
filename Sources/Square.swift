@@ -55,13 +55,13 @@ extension Square {
      */
     @discardableResult
     open class func display(_ title: String) -> UIAlertController {
-        return display(title, message: "")
+        return display(title, message: nil)
     }
     /**
      Displaying title and message with UIAlertController
      */
     @discardableResult
-    open class func display(_ title: String, message: String) -> UIAlertController {
+    open class func display(_ title: String?, message: String?) -> UIAlertController {
         return display(title, message: message, alertAction: .default(message: "OK"), acceptBlock: {
             // Do nothing
         })
@@ -83,8 +83,8 @@ extension Square {
      ```
      */
     @discardableResult
-    open class func display(_ title: String,
-                            message: String,
+    open class func display(_ title: String?,
+                            message: String?,
                             alertAction: ActionType,
                             preferredStyle: UIAlertController.Style = .alert,
                             acceptBlock: @escaping () -> ()) -> UIAlertController {
@@ -114,8 +114,8 @@ extension Square {
      ```
      */
     @discardableResult
-    open class func display(_ title: String,
-                            message: String,
+    open class func display(_ title: String?,
+                            message: String?,
                             alertActions: [ActionType],
                             preferredStyle: UIAlertController.Style = .alert,
                             tapBlock: ( (UIAlertAction, Int) -> Void)? ) -> UIAlertController {
@@ -144,8 +144,8 @@ extension Square {
     }
     
     @discardableResult
-    open class func displayActionSheet(_ title: String,
-                                       message: String,
+    open class func displayActionSheet(_ title: String?,
+                                       message: String?,
                                        sourceView: UIView,
                                        alertActions: [ActionType],
                                        tabBlock: ((UIAlertAction, Int) -> Void)? ) -> UIAlertController {
