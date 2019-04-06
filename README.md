@@ -1,12 +1,12 @@
 # Square
 
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square.svg?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg) [![Build Status](https://travis-ci.com/devmjun/Square.svg?branch=master)](https://travis-ci.com/devmjun/Square) [![pod compatible](https://img.shields.io/cocoapods/v/Square.svg?style=flat)](https://cocoapods.org/pods/Square) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Square's purpose is that to use *UIAlertController* easily.
 
 ## Requirements
 
-Square requires iOS 8 or above and is written in Swift 4.2
+Square requires iOS 8 or above and is written in Swift 5.0
 
 ## Installation
 
@@ -14,7 +14,7 @@ Square requires iOS 8 or above and is written in Swift 4.2
 Suqare is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your podfile: 
 
 ```ruby
-pod 'Square', '~> 0.5.0'
+pod 'Square', '~> 0.6.0'
 ```
 
 And run  `pod install`. 
@@ -30,7 +30,7 @@ $ brew install carthage
 add Suqare to your `Cartfile`: 
 
 ```ogdl
-github "devmjun/Square" ~> 0.5.0
+github "devmjun/Square" ~> 0.6.0
 ```
 
 And run `carthage update`.
