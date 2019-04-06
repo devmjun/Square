@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = "Square"
-  s.version               = "0.5.0"
+  s.version               = "0.6.0"
   s.summary               = "Square's purpose is that easily use UIAlertController."
 
   s.homepage              = "https://github.com/devmjun/Square"
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.exclude_files         = "Sources/**/*.plist"
 
   s.ios.deployment_target = "8.0"
-  s.swift_version         = "4.2"
+  s.swift_version         = "5.0"
 end
