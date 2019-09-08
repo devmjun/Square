@@ -102,6 +102,14 @@ Square.display("Title", message: "Message", alertActions: [.cancel(message: "Can
 }
 ```
 
+## Useful functions 
+
+```swift
+Square.debugAlert()
+```
+
+above a method is useful when you need to know where the function is running  
+
 ## Customize
 
 ```swift
@@ -111,7 +119,6 @@ alertController.setValue(attributedMessage, forKey: "attributedMessage")
 alertController.view.tintColor =  SomeColor
 ```
         
-
 ## Contributing 
 
 Bug reports, pull request and any discussion are welcome💖
