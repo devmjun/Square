@@ -178,7 +178,7 @@ extension Square {
   }
 }
 
-extension Square {
+public extension Square {
   static func debugAlert(
     file: String = #file,
     line: Int = #line,
