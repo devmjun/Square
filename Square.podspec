@@ -8,14 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name                  = "Square"
-  s.version               = "0.6.0"
+  s.version               = "0.7.0"
   s.summary               = "Square's purpose is that easily use UIAlertController."
 
   s.homepage              = "https://github.com/devmjun/Square"
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "Minjun Ju" => "dev.mjun@gmail.com" }
 
-  
   s.source                = { :git => "https://github.com/devmjun/Square.git", 
                               :tag => s.version.to_s }
   s.source_files          = "Sources/**/*"
