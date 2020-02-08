@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = "Square"
-  s.version               = "0.6.3"
+  s.version               = "0.6.4"
   s.summary               = "Square's purpose is that easily use UIAlertController."
 
   s.homepage              = "https://github.com/devmjun/Square"

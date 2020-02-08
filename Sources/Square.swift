@@ -74,9 +74,10 @@ extension Square {
   @discardableResult
   open class func display(
     _ title: String?,
+    _ actionTitle: String = "OK",
     message: String?
     ) -> UIAlertController {
-    return display(title, message: message, alertAction: .default(message: "OK"), acceptBlock: {
+    return display(title, message: message, alertAction: .default(message: actionTitle), acceptBlock: {
       // Do nothing
     })
   }
