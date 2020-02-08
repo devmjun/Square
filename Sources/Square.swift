@@ -51,9 +51,23 @@ extension Square {
    Displaying only title with UIAlertController
    */
   @discardableResult
-  open class func display(_ title: String) -> UIAlertController {
-    return display(title, message: nil)
+  open class func display(
+    _ title: String,
+    _ actionTitle: String = "OK"
+  ) -> UIAlertController {
+    switch actionTitle == "OK" {
+    case true:
+      return display(title, message: nil)
+    case false:
+      return display(
+        title,
+        message: nil,
+        alertAction: .default(message: actionTitle),
+        acceptBlock: { /* Do nothing */ }
+      )
+    }
   }
+  
   /**
    Displaying title and message with UIAlertController
    */
